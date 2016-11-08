@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+
+
+
+<RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorGray"
+        android:id="@+id/redioGroup">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_button"
+                android:src="@drawable/text_button"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_button"
+                android:src="@drawable/image"
+
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/music_button"
+                android:src="@drawable/music_button"
+
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_button"
+                android:src="@drawable/movie_button"
+
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/avatar_bt"
+                android:src="@drawable/avatar"
+
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RadioGroup>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/text_frameLayout"
+            android:layout_above="@+id/redioGroup"
+            android:layout_alignParentTop="true"
+            ></FrameLayout>
+
+
+
+
+</RelativeLayout>
